@@ -1,17 +1,17 @@
--- Crear la tabla lines si aún no existe
-CREATE TABLE IF NOT EXISTS public.lines
+-- Creamos una tabla llamada "lines" en el esquema "public"
+CREATE TABLE public.lines
 (
     -- Definimos las columnas de la tabla
-    id serial NOT NULL, -- ID de la línea
-    name character varying(50) NOT NULL, -- Nombre de la línea
-    color character varying(30) NOT NULL, -- Color de la línea
-    zone character varying(15), -- Zona de la línea
-    active boolean NOT NULL DEFAULT TRUE, -- Indica si la línea está activa o no
-    create_at timestamp with time zone NOT NULL DEFAULT NOW(), -- Fecha y hora de creación del registro
-    update_at timestamp with time zone DEFAULT NOW(), -- Fecha y hora de la última actualización del registro
+    id serial NOT NULL,
+    name character varying(50) NOT NULL,
+    color character varying(30) NOT NULL,
+    zone character varying(15),
+    active boolean NOT NULL DEFAULT TRUE,
+    create_at timestamp with time zone NOT NULL DEFAULT NOW(),
+    update_at timestamp with time zone DEFAULT NOW(),
     
-    -- Agregamos un constraint de clave primaria en la columna "id"
-    CONSTRAINT lines_pkey PRIMARY KEY (id)
+    -- Agregamos un constraint de clave primaria en las columnas "id" y "color"
+    CONSTRAINT lines_pkey PRIMARY KEY (id, color)
 ) 
 -- Particionamos la tabla por listas utilizando la columna "color" como clave de partición
 PARTITION BY LIST (color);
