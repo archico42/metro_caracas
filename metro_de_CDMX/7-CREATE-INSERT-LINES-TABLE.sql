@@ -10,8 +10,6 @@ CREATE TABLE public.lines
     create_at timestamp with time zone NOT NULL DEFAULT NOW(),
     update_at timestamp with time zone DEFAULT NOW(),
     
-    -- Agregamos un constraint de clave primaria en las columnas "id" y "color"
-    CONSTRAINT lines_pkey PRIMARY KEY (id, color)
 ) 
 -- Particionamos la tabla por listas utilizando la columna "color" como clave de partición
 PARTITION BY LIST (color);
