@@ -8,7 +8,7 @@ CREATE TABLE public.lines
     zone character varying(15),
     active boolean NOT NULL DEFAULT TRUE,
     create_at timestamp with time zone NOT NULL DEFAULT NOW(),
-    update_at timestamp with time zone DEFAULT NOW(),
+    update_at timestamp with time zone DEFAULT NOW()
     
 ) 
 -- Particionamos la tabla por listas utilizando la columna "color" como clave de partición
