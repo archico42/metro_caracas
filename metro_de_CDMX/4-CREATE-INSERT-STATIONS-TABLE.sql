@@ -8,10 +8,7 @@ CREATE TABLE public.stations
     zones character varying, -- Zonas a las que pertenece la estación
     active boolean DEFAULT TRUE, -- Indica si la estación está activa o no
     create_at timestamp with time zone DEFAULT NOW(), -- Fecha y hora de creación del registro
-    update_at timestamp with time zone DEFAULT NOW(), -- Fecha y hora de la última actualización del registro
-    
-    -- Establecer la clave primaria en las columna id
-    CONSTRAINT stations_pkey PRIMARY KEY (id)
+    update_at timestamp with time zone DEFAULT NOW() -- Fecha y hora de la última actualización del registro
 ) 
 -- Particionamos la tabla por listas utilizando la columna "color" como clave de partición
 PARTITION BY LIST (color);
