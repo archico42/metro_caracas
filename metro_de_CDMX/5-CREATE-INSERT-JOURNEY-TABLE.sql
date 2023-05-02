@@ -80,4 +80,5 @@ insert into journey (id_pasajero, id_trayecto, inicio, final) values (16, 87, '0
 insert into journey (id_pasajero, id_trayecto, inicio, final) values (5, 101, '21/06/2022', '22/05/2022');
 insert into journey (id_pasajero, id_trayecto, inicio, final) values (9, 60, '02/10/2021', '27/07/2022');
 insert into journey (id_pasajero, id_trayecto, inicio, final) values (1, 89, '03/07/2022', '03/09/2021');
-insert into journey (id_pasajero, id_trayecto, inicio, final) values (19, 70, '17/12/2020', '18/06/2022');
+insert into journey (id_pasajero, id_trayecto, inicio, final) values (19, 70, '17/12/2020', '18/06/2022')
+RETURNING *;

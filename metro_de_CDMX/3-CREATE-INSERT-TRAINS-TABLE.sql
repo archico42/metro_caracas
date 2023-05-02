@@ -39,4 +39,5 @@ insert into trains (type, year) values ('Reichel Group', 1999);
 insert into trains (type, year) values ('Bogisich Group', 1992);
 insert into trains (type, year) values ('Nikolaus-Howell', 2003);
 insert into trains (type, year) values ('Fisher Inc', 1992);
-insert into trains (type, year) values ('Brekke, Beahan and Rath', 1994);
+insert into trains (type, year) values ('Brekke, Beahan and Rath', 1994)
+RETURNING *;

@@ -36,4 +36,5 @@ insert into pasajero (nombre, direccion_residencia, fecha_nacimiento) values ('G
 insert into pasajero (nombre, direccion_residencia, fecha_nacimiento) values ('Afton Jedrzejczak', '9th Floor', '18/12/2009');
 insert into pasajero (nombre, direccion_residencia, fecha_nacimiento) values ('Corny Sedwick', '2nd Floor', '15/10/2009');
 insert into pasajero (nombre, direccion_residencia, fecha_nacimiento) values ('Ichabod Goldthorp', '5th Floor', '11/09/2019');
-insert into pasajero (nombre, direccion_residencia, fecha_nacimiento) values ('Vinny Oldland', 'Apt 1694', '08/02/2022');
+insert into pasajero (nombre, direccion_residencia, fecha_nacimiento) values ('Vinny Oldland', 'Apt 1694', '08/02/2022')
+RETURNING *;

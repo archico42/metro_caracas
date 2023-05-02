@@ -65,15 +65,16 @@ insert into trayecto (id_trains, id_stations) values (35, 'rosa');
 insert into trayecto (id_trains, id_stations) values (36, 'morado');
 insert into trayecto (id_trains, id_stations) values (37, 'cian');
 insert into trayecto (id_trains, id_stations) values (38, 'morado');
-insert into trayecto(id_trains,id_stations)values(39,'café')
-insert into trayecto(id_trains,id_stations)values(40,'oro')
-insert into trayecto(id_trains,id_stations)values(41,'cian')
-insert into trayecto(id_trains,id_stations)values(42,'rosa')
-insert into trayecto(id_trains,id_stations)values(43,'verde olivo')
-insert into trayecto(id_trains,id_stations)values(44,'verde y gris')
-insert into trayecto(id_trains,id_stations)values(45,'morado')
-insert into trayecto(id_trains,id_stations)values(46,'café')
-insert into trayecto(id_trains,id_stations)values(47,'amarillo')
-insert into trayecto(id_trains,id_stations)values(48,'verde olivo')
-insert into trayecto(id_trains,id_stations)values(49,'rojo')
+insert into trayecto(id_trains,id_stations)values(39,'café');
+insert into trayecto(id_trains,id_stations)values(40,'oro');
+insert into trayecto(id_trains,id_stations)values(41,'cian');
+insert into trayecto(id_trains,id_stations)values(42,'rosa');
+insert into trayecto(id_trains,id_stations)values(43,'verde olivo');
+insert into trayecto(id_trains,id_stations)values(44,'verde y gris');
+insert into trayecto(id_trains,id_stations)values(45,'morado');
+insert into trayecto(id_trains,id_stations)values(46,'café');
+insert into trayecto(id_trains,id_stations)values(47,'amarillo');
+insert into trayecto(id_trains,id_stations)values(48,'verde olivo');
+insert into trayecto(id_trains,id_stations)values(49,'rojo');
 insert into trayecto(id_trains,id_stations)values(1,'verde y gris')
+RETURNING *;
