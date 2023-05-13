@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS public.journey
     final TIMESTAMP WITH TIME ZONE NOT NULL, -- Fecha y hora de finalización del viaje
     create_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(), -- Fecha y hora de creación del registro
     update_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(), -- Fecha y hora de la última actualización del registro
-    
+    estado character varying COLLATE pg_catalog."default",
     -- Establecer la clave primaria en las columna id
     CONSTRAINT journey_pkey PRIMARY KEY (id),
     
